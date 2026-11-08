@@ -21,6 +21,42 @@ TASI is a command-line tool that analyzes Git commit history and generates stati
 - Analyzes file changes
 - Identifies commits not yet in master/main
 
+## Installation
+
+### macOS / Linux (Recommended)
+
+Install using the installer script:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/qodana/tasi-releases/main/install.sh | bash
+```
+
+This installs `tasi` to `~/.local/bin/tasi`. If this directory is not in your PATH, add it:
+
+```bash
+export PATH="$HOME/.local/bin:$PATH"
+```
+
+To install to a different directory (e.g., `/usr/local/bin`):
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/qodana/tasi-releases/main/install.sh | bash -s -- "" /usr/local/bin
+```
+
+### Windows
+
+Download the latest release from [Releases](https://github.com/qodana/tasi-releases/releases/latest), extract `tasi-windows-amd64.zip`, and run `tasi.exe`.
+
+### Manual Installation (All Platforms)
+
+Download the appropriate archive from [Releases](https://github.com/qodana/tasi-releases/releases/latest):
+
+- **macOS (Apple Silicon)**: `tasi-macos-arm64.tar.gz`
+- **Linux (x86_64)**: `tasi-linux-amd64.tar.gz`
+- **Windows (x86_64)**: `tasi-windows-amd64.zip`
+
+Extract and run the binary.
+
 ## Usage
 
 ```bash
